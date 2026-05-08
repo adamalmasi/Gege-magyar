@@ -44,11 +44,12 @@ Válaszolj KIZÁRÓLAG ebben a JSON formátumban, semmi más:
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(result)
     };
-  } catch {
+  } catch (err) {
+    console.error('gradeAnswer error:', err.message);
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ score: 0, feedback: 'Az értékelés sikertelen, kérlek ellenőrizd magad.' })
+      body: JSON.stringify({ score: 0, feedback: `Hiba: ${err.message}` })
     };
   }
 };
