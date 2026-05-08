@@ -64,7 +64,8 @@ Válaszolj KIZÁRÓLAG ebben a JSON formátumban, semmi más:
       }]
     });
 
-    const result = JSON.parse(message.content[0].text);
+    const raw = message.content[0].text.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/, '').trim();
+    const result = JSON.parse(raw);
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
