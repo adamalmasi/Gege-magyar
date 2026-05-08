@@ -1,7 +1,7 @@
 // js/logic.js
 
 function assembleRandomTest(allFeladatlapok) {
-  const numPositions = allFeladatlapok[0].tasks.length;
+  const numPositions = Math.max(...allFeladatlapok.map(fl => fl.tasks.length));
   const result = [];
   for (let pos = 0; pos < numPositions; pos++) {
     const candidates = allFeladatlapok
@@ -30,6 +30,7 @@ function gradeExact(task, answers) {
   } else if (task.scoring === 'tiered') {
     const correctCount = Object.values(subResults).filter(r => r.correct).length;
     scored = 0;
+    // tiers must be sorted descending by minCorrect
     for (const [minCorrect, pts] of (task.tiers || [])) {
       if (correctCount >= minCorrect) { scored = pts; break; }
     }
