@@ -1,0 +1,326 @@
+{
+  "year": 2023,
+  "variant": 1,
+  "label": "2023 rendes felvételi",
+  "tasks": [
+    {
+      "id": 1,
+      "maxPoints": 1,
+      "instruction": "Alkoss az alábbi betűkből kettő olyan 3 betűs szópárt, amelyek oda-vissza olvasva is értelmesek. (Például: TÉR – RÉT) Írd a szópárokat a pontozott vonalra! A betűk mindkét szópárban felhasználhatók.\n\nA felhasználható betűk: É, L, R, M, K, S, V, O\n\nAz egyik szópár: ………………… − …………………………\nA másik szópár:  ………………… − …………………………",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "Írj két szópárt! (pl. VÉR–RÉV és RÉM–MÉR)",
+          "answer": "VÉR–RÉV, RÉM–MÉR, KÉL–LÉK, MOS–SOM, KOS–SOK, MOL–LOM (bármely két helyes pár elfogadható)",
+          "points": 1
+        }
+      ],
+      "scoring": "all_or_nothing",
+      "images": [],
+      "explanation": "Lehetséges szópárok: VÉR-RÉV, RÉM-MÉR, KÉL-LÉK, MOS-SOM, KOS-SOK, MOL-LOM. Az 1 pont akkor adható meg, ha mindkét szópár helyes, és nincs mellettük helytelen. A kisbetűs írásmód is elfogadható. Más megoldás akkor fogadható el, ha a szó megléte magyar nyelvű szótárral igazolható.",
+      "gradingType": "open"
+    },
+    {
+      "id": 2,
+      "maxPoints": 2,
+      "instruction": "Az alábbi mondatban két ismert szólás keveredett össze. Írd le helyesen a két szólást! Ehhez további, a mondatokban nem szereplő szavakra is szükséged lehet. A szavak toldalékait is megváltoztathatod.\n\nNem látja a rossz fától az erdőtüzet.\n\na) 1. szólás: .......................................................................................................................\nb) 2. szólás: .......................................................................................................................",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "1. szólás:",
+          "answer": "Nem látja a fától az erdőt.",
+          "points": 1
+        },
+        {
+          "id": "b",
+          "prompt": "2. szólás:",
+          "answer": "Rossz fát tesz a tűzre.",
+          "points": 1
+        }
+      ],
+      "scoring": "per_item",
+      "images": [],
+      "explanation": "1. szólás: Nem látja / látta a fától az erdőt. 2. szólás: Rossz fát tesz / tett a tűzre. Pont csak akkor adható, ha a felvételiző a szólásokat a megadott változatok egyikében adta meg. A tesz szó helyett a rak szó nem fogadható el. A szólások sorrendje felcserélhető.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 3,
+      "maxPoints": 5,
+      "instruction": "Találd meg az alábbi 15 szó közül az 5 hibásan írt szót! Írd ezek sorszámát a lottószelvényre!\n\n1. fürj | 2. szakáll | 3. oxigén | 4. Széchenyi | 5. lessz | 6. hagyja | 7. ujjabb | 8. nyilik | 9. tavaly | 10. higyjél | 11. muszáj | 12. segítsd | 13. folyjon | 14. játszuk | 15. Déli pályaudvar\n\nLottószelvény: [ ] [ ] [ ] [ ] [ ]",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "Írd be a lottószelvényre az 5 hibásan írt szó sorszámát!",
+          "answer": "5, 7, 8, 10, 14",
+          "points": 5
+        }
+      ],
+      "scoring": "per_item",
+      "images": [],
+      "explanation": "Helyes sorszámok: 5, 7, 8, 10, 14. (lessz → lesz, ujjabb → újabb, nyilik → nyílik, higyjél → higgyed/higgy, játszuk → játsszuk). Minden helyes szám beírásáért 1 pont jár. A helyes számokat bármilyen sorrendben el kell fogadni! A számok helyett a hibás szóalakok beírását is el kell fogadni.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 4,
+      "maxPoints": 2,
+      "instruction": "a) Párosítsd az alábbi megszólításokat, köszöntési formákat a nekik leginkább megfelelő képpel! Írd a kép sorszámát a megszólítás mellé! Kettőhöz nem tartozik kép, oda tegyél X-et!\n\nA) Adjon Isten! ………...\nB) Tisztelt Ház! ………...\nC) Üdvözlöm, Méltóságos Uram! ………...\nD) Honfitársaim! ………...\nE) Csá, csumi! ………...\nF) Kezét csókolom! ………...\nG) Kedves Szülők! ………...\n\n[1. kép: két fiatal lazán köszönt egymásnak, 2. kép: úr mélyen meghajol (sziluett), 3. kép: idős férfi (székely/vidéki viselet), 4. kép: ünnepi szónok tömeg előtt épület előtt, 5. kép: elegáns úr kezet csókol hölgynek]",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "Párosítsd a megszólításokat a képekkel! (A: ?, B: ?, C: ?, D: ?, E: ?, F: ?, G: ?)",
+          "answer": "A) 3, B) X, C) 2, D) 4, E) 1, F) 5, G) X",
+          "points": 2
+        }
+      ],
+      "scoring": "tiered",
+      "tiers": [[7, 2], [5, 1], [0, 0]],
+      "images": ["[KÉP SZÜKSÉGES: 5 db kép a PDF 3. oldaláról — köszöntési formák képei]"],
+      "explanation": "A) 3, B) X, C) 2, D) 4, E) 1, F) 5, G) X. 7 jó megoldás: 2 pont, 5–6 jó megoldás: 1 pont, 0–4 jó megoldás: 0 pont. A válasz csak akkor fogadható el, ha nincs mellette rossz megoldás. Ha a felvételiző az X-et nem jelölte, üresen hagyta a válasz helyét, akkor az nem fogadható el helyes megoldásnak.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 5,
+      "maxPoints": 7,
+      "instruction": "A) Karikázd be minden sorban a kakukktojást! A megoldásban a sor elején megadott szempont segít!\na) szóalak: háztető, képregény, társas, fasor, kulcslyuk\nb) hangrend: ünneplés, ajándék, sziget, kerítés, üstökös\nc) azonos alakú: csiga, hasad, fal, villa, sejt\nd) hasonulás: biztos, könyvtár, dobtuk, osztja, fogta\ne) toldalék: futás, kertész, bátorság, szépet, futó\n\nB) Egészítsd ki az alábbi mondatpárok hiányos szavait a jelentésnek megfelelően. A pár egyik tagja csak magas, a másik csak mély magánhangzót tartalmazzon! 2-2 különböző szót alkoss!\nf) A férfiak egy helyben t…p…gt…k, nem mozdultak sehová.\n   A hölgyek elegánsan, óvatosan t…p…gt…k magas sarkú cipőikben a szilveszteri bálban.\ng) A víz felszínén egy csónak l…b…gt…tt a part felé.\n   Két gyertyaláng l…b…gt…tt a sötétben.",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "Karikázd be a kakukktojást — szóalak: háztető, képregény, társas, fasor, kulcslyuk",
+          "answer": "társas",
+          "points": 1
+        },
+        {
+          "id": "b",
+          "prompt": "Karikázd be a kakukktojást — hangrend: ünneplés, ajándék, sziget, kerítés, üstökös",
+          "answer": "ajándék",
+          "points": 1
+        },
+        {
+          "id": "c",
+          "prompt": "Karikázd be a kakukktojást — azonos alakú: csiga, hasad, fal, villa, sejt",
+          "answer": "csiga",
+          "points": 1
+        },
+        {
+          "id": "d",
+          "prompt": "Karikázd be a kakukktojást — hasonulás: biztos, könyvtár, dobtuk, osztja, fogta",
+          "answer": "osztja",
+          "points": 1
+        },
+        {
+          "id": "e",
+          "prompt": "Karikázd be a kakukktojást — toldalék: futás, kertész, bátorság, szépet, futó",
+          "answer": "szépet",
+          "points": 1
+        },
+        {
+          "id": "f",
+          "prompt": "Egészítsd ki a mondatpárt! Mély magánhangzós szó (férfiak): t…p…gt…k — Magas magánhangzós szó (hölgyek): t…p…gt…k",
+          "answer": "férfiak: topogtak – hölgyek: tipegtek",
+          "points": 1
+        },
+        {
+          "id": "g",
+          "prompt": "Egészítsd ki a mondatpárt! Mély magánhangzós szó (csónak): l…b…gt…tt — Magas magánhangzós szó (gyertyaláng): l…b…gt…tt",
+          "answer": "csónak: libegett/lebegett – gyertyaláng: lobogott",
+          "points": 1
+        }
+      ],
+      "scoring": "per_item",
+      "images": [],
+      "explanation": "a) társas, b) ajándék, c) csiga, d) osztja, e) szépet — Minden helyes megoldásért 1 pont adható. A pont nem adható meg, ha egy sorban több szót is jelölt. f) férfiak: topogtak – hölgyek: tipegtek. g) csónak: libegett/lebegett – gyertyaláng: lobogott. Minden helyes szópár 1-1 pont. Az 1 pont csak akkor adható meg, ha a helyes szópár mellett nincs rossz megoldás.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 6,
+      "maxPoints": 8,
+      "instruction": "A) Ha a megadott szóból néhány betűt elveszünk, különböző szófajú szavakat kaphatunk. Találd meg a kért szófajú szavakat! Minden pontsorra csak egy példát írj! A betűk sorrendjén ne változtass!\n\nPélda: SZÉLES → főnév: SZÉL → ige: LES → melléknév: ÉLES\n\nTÖRTÉNELEM\na) főnév: .......................\nb) ige: .......................\nc) névmás: .....................\nd) igekötő: .....................\n\nB) Írd ki a vonalra az adott mondatban található alanyt!\ne) A könyvtár csendje mindig megnyugtatott. ………………………………\nf) Mindenkinek megvan a maga keresztje. ………………………………\n\nÍrd ki a vonalra az adott mondatban található állítmányt!\ng) Ebül szerzett jószág ebül vész el. ………………………………\nh) Petőfi a magyar költészet kiemelkedő alakja. ………………………………",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "TÖRTÉNELEM — főnév (betűk sorrendjén ne változtass!):",
+          "answer": "tört vagy elem",
+          "points": 1
+        },
+        {
+          "id": "b",
+          "prompt": "TÖRTÉNELEM — ige (betűk sorrendjén ne változtass!):",
+          "answer": "tör vagy tört (múlt időben)",
+          "points": 1
+        },
+        {
+          "id": "c",
+          "prompt": "TÖRTÉNELEM — névmás (betűk sorrendjén ne változtass!):",
+          "answer": "én vagy e",
+          "points": 1
+        },
+        {
+          "id": "d",
+          "prompt": "TÖRTÉNELEM — igekötő (betűk sorrendjén ne változtass!):",
+          "answer": "el vagy le",
+          "points": 1
+        },
+        {
+          "id": "e",
+          "prompt": "Alany: A könyvtár csendje mindig megnyugtatott.",
+          "answer": "(a) csendje",
+          "points": 1
+        },
+        {
+          "id": "f",
+          "prompt": "Alany: Mindenkinek megvan a maga keresztje.",
+          "answer": "(a) keresztje",
+          "points": 1
+        },
+        {
+          "id": "g",
+          "prompt": "Állítmány: Ebül szerzett jószág ebül vész el.",
+          "answer": "vész el",
+          "points": 1
+        },
+        {
+          "id": "h",
+          "prompt": "Állítmány: Petőfi a magyar költészet kiemelkedő alakja.",
+          "answer": "alakja",
+          "points": 1
+        }
+      ],
+      "scoring": "per_item",
+      "images": [],
+      "explanation": "a) főnév: tört, elem — b) ige: tör, tört (múlt időben) — c) névmás: én, e — d) igekötő: el, le. Szófajonként 1 jó megoldásért 1 pont adható. A válasz csak akkor fogadható el, ha a jó válasz mellett nincs rossz megoldás. e) (a) csendje — f) (a) keresztje — g) vész el (igekötő nélkül nem fogadható el a válasz) — h) alakja. A válasz csak akkor fogadható el, ha csak a megadott szavakat írta ki.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 7,
+      "maxPoints": 2,
+      "instruction": "A XIX. században a nyelvújítás több ezer új szót alkotott, amelyek nem honosodtak meg nyelvünkben. Írd a nyelvújítási szó mellé annak az egy szónak a betűjelét, amelyet ma használunk helyette!\n\ncsucsag: ………\négész: ………\ngömble: ………\nhangbetűzet: ………\n\nA) csillagász\nB) piramis\nC) régész\nD) zenekar\nE) kotta\nF) égitest",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "Párosítsd a nyelvújítási szavakat a mai megfelelőikkel! (csucsag: ?, égész: ?, gömble: ?, hangbetűzet: ?)",
+          "answer": "csucsag: B, égész: A, gömble: F, hangbetűzet: E",
+          "points": 2
+        }
+      ],
+      "scoring": "tiered",
+      "tiers": [[4, 2], [2, 1], [0, 0]],
+      "images": [],
+      "explanation": "csucsag: B (piramis), égész: A (csillagász), gömble: F (égitest), hangbetűzet: E (kotta). 4 jó megoldás: 2 pont, 2–3 jó megoldás: 1 pont, 0–1 jó megoldás: 0 pont. A válasz csak akkor fogadható el, ha nincs mellette rossz megoldás.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 8,
+      "maxPoints": 4,
+      "instruction": "Olvasd el figyelmesen az alábbi verset, majd oldd meg a rá vonatkozó feladatokat!\n\nKányádi Sándor: Hajnalban a csillagok\n\nHajnalban a csillagok\nlehullnak a földre,\nmint a fáról a gyümölcs:\nalma, szilva, körte.\n\nSzunyókálnak szelíden\nkéső délelőttig,\nmustillatú sugarak\namíg föl nem költik.\n\nAkkor aztán napsugár-\nszálakba fogózva\nföllibegnek, mint a pók,\nújra a magosba.\n\na) A vers szövege szerint mik libegnek föl a magasba?\nb) Írd az alábbi idézet mellé, hogy milyen költői kép található a verssorban! >>föllibegnek, mint a pók<<\nc) Igazak vagy hamisak az alábbi állítások?\n   A vers páros rímelésű. IGAZ – HAMIS\n   A „Szunyókálnak szelíden\" sorban alliterációt találhatunk. IGAZ – HAMIS",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "A vers szövege szerint mik libegnek föl a magasba?",
+          "answer": "(a) csillagok (libegnek)",
+          "points": 1
+        },
+        {
+          "id": "b",
+          "prompt": "„föllibegnek, mint a pók\" — milyen költői kép?",
+          "answer": "hasonlat",
+          "points": 1
+        },
+        {
+          "id": "c",
+          "prompt": "Igaz vagy hamis? — A vers páros rímelésű.",
+          "answer": "HAMIS",
+          "points": 1
+        },
+        {
+          "id": "d",
+          "prompt": "Igaz vagy hamis? — A „Szunyókálnak szelíden\" sorban alliterációt találhatunk.",
+          "answer": "IGAZ",
+          "points": 1
+        }
+      ],
+      "scoring": "per_item",
+      "images": [],
+      "explanation": "a) (a) csillagok (libegnek) — b) hasonlat (a válasz csak akkor fogadható el, ha a jó válasz mellett nem szerepel más szó) — c) A vers páros rímelésű: HAMIS — d) A „Szunyókálnak szelíden\" sorban alliterációt találhatunk: IGAZ.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 9,
+      "maxPoints": 9,
+      "instruction": "Olvasd el figyelmesen a következő szöveget, majd oldd meg a feladatokat!\n\nElek Lenke: Kabos Gyula – egy zseni nyelve\n\n„Szegény vagyok, mint a templom agara.\" … „Úgy ott hagyta azt a szegény lányt, mint Szent Péter az esernyőjét.\" … „Ritka, mint a fehér hattyú.\"\nIgen, ilyeneket csak Kabos Gyula – a magyar Chaplin, ahogyan halála után sokan nevezték – tudott kitalálni. Forgatókönyvtől függetlenül, rögtönözve. Sokszor abba kellett hagyni a forgatást, mert a stáb tagjai fetrengtek a nevetéstől.\n(Mindeközben nagyon szomorú ember volt rossz üzleti érzékkel, aki bármennyit keresett, a befektetéseket illetően rossz döntéseket hozott, sosem érezte magát biztos anyagi helyzetben, és mindig túl sokat kellett dolgoznia, hogy eltartsa a családját.)\nNem csak legenda az, hogy a forgatókönyvekben szerepelt egy olyan mondat – ha éppen leült a történet –, miszerint „itt bejön Kabos, és mond valami jót\".\nÉs ő mondott. Mindig kitalált valami apróságot, ami leírva persze blődség, de hozzáképzelve a színész csücsöri száját, hebegését, motyogását, mozdulatait, mozgását, gesztusait, ellenállhatatlan nevetésre késztet.\n\nA magyar nyelvvel ugyanolyan mesterien játszott, mint a testével és a ruháival: kalapja félrecsúszva, a nadrág túlságosan felhúzva, a hózentróger felemás, a zakó csálé, a cipőbe véletlenül kávézaccot önt, cipőtalpát a Kölcsönkért kastély című filmben szorgos munkával kilyukasztja, hogy szegénynek nézzék.\nÖrökzöld jelenet, amikor a Meseautó című film egyik híres jelenetében belebonyolódik a Mit sütsz, kis szücs nyelvtörőbe. Biztos nem hitte volna el – örök kishitűségben szenvedett –, hogy 80 év múlva is szinte minden magyar tudja majd folytatni a mondatot.\nEgyébként is, ahogy Kabos telefonált, az külön megérne egy misét.\nNyelvi leleményei kifogyathatatlannak bizonyultak, amikor átalakította saját szája íze szerint a párbeszédeket. Hasonlatai is csak rá jellemzők. A Lovagias ügyben így udvarol Gizikének: „Úgy összevissza vagyok, mint cilinderen a szőr.\" Még mindig udvarlás: „Hiúságból akartam meghódítani, de rajta veszíték.\"\nKépzeljük el, még mennyivel mulattatóbbak lettek volna ezek a filmek, ha maradt volna ideje arra, hogy jobban kidolgozzon egy-egy jelenetet! De előfordult, hogy egy évben nyolc filmben is szerepelt, miközben színpadon is játszott.\n\na) Az olvasottak alapján, mit gondolsz, mi volt Kabos Gyula foglalkozása? Írd a pontsorra!\nb) Megadtuk a szöveg két szavának a jelentését. Írd ki a szövegből a szómagyarázatok mellé a megfelelő idegen eredetű szót!\n   egy film elkészítésén dolgozó csapat: ............................................................\n   testtel tett kifejező mozdulat, kézmozdulat: .............................................\nc) Állapítsd meg, hogy a szöveg alapján igazak vagy hamisak az alábbi állítások! A helyes választ karikázd be!\n   1. Kabos Gyula boldog ember volt. IGAZ – HAMIS\n   2. A forgatókönyvekben szerepelt ez a mondat: „itt bejön Kabos, és mond valami jót\". IGAZ – HAMIS\n   3. Kabos Gyula filmjei közül négyet említ cím szerint a szöveg. IGAZ – HAMIS\n   4. Kabos Gyula a forgatásokra minden jelenetét jó előre begyakorolta. IGAZ – HAMIS\nd) Válaszd ki az alábbi magyarázatok közül, hogy mit jelent a 2. részben ez a kifejezés: „az külön megérne egy misét\"! Karikázd be az egyetlen helyes válasz számát!\n   1. Azért el kell menni a templomba.\n   2. Sok embert megnevettetett.\n   3. Arról még hosszasan lehet beszélni.\ne) Írd le a szöveg első részében kiemelt szóláshasonlatok eredeti formáját!\n   1. ......................................................................................................................................\n   2. ......................................................................................................................................",
+      "subTasks": [
+        {
+          "id": "a",
+          "prompt": "Mi volt Kabos Gyula foglalkozása?",
+          "answer": "színész, színművész",
+          "points": 1
+        },
+        {
+          "id": "b",
+          "prompt": "Idegen szó: egy film elkészítésén dolgozó csapat:",
+          "answer": "stáb",
+          "points": 1
+        },
+        {
+          "id": "c",
+          "prompt": "Idegen szó: testtel tett kifejező mozdulat, kézmozdulat:",
+          "answer": "gesztus / gesztusai",
+          "points": 1
+        },
+        {
+          "id": "d",
+          "prompt": "Igaz vagy hamis? (1) Kabos Gyula boldog ember volt. (2) A forgatókönyvekben szerepelt: „itt bejön Kabos, és mond valami jót\". (3) Négy filmet említ cím szerint. (4) Minden jelenetét jó előre begyakorolta.",
+          "answer": "H, I, H, H",
+          "points": 4
+        },
+        {
+          "id": "e",
+          "prompt": "Mit jelent: „az külön megérne egy misét\"?",
+          "answer": "3",
+          "points": 1
+        },
+        {
+          "id": "f",
+          "prompt": "Írd le a szöveg első részében kiemelt szóláshasonlatok eredeti formáját! (1. és 2.)",
+          "answer": "Szegény vagyok (Szegény), mint a templom egere. | Ritka, mint a fehér holló.",
+          "points": 1
+        }
+      ],
+      "scoring": "per_item",
+      "images": [],
+      "explanation": "a) színész, színművész — b) stáb — c) gesztus/gesztusai — d) H, I, H, H (1. Kabos Gyula boldog ember volt: HAMIS — szomorú ember volt; 2. A forgatókönyvekben szerepelt: IGAZ; 3. Négy filmet említ cím szerint: HAMIS — három cím szerepel (Kölcsönkért kastély, Meseautó, Lovagias ügy); 4. Minden jelenetét begyakorolta: HAMIS — rögtönzött). A pont csak akkor adható meg, ha a felvételiző egyértelműen jelöli a válaszát. — e) 3. (Arról még hosszasan lehet beszélni) — f) Szegény vagyok (Szegény), mint a templom egere. | Ritka, mint a fehér holló. A pont csak akkor adható meg, ha mindkét szóláshasonlat a megadott szóval lett kiegészítve.",
+      "gradingType": "exact"
+    },
+    {
+      "id": 10,
+      "maxPoints": 10,
+      "instruction": "A múzeumoknak vége?\nIdőnként azt hallani, hogy a múzeumok ideje lejárt, hisz manapság inkább az internet segítségével ismerkedünk a térben és időben távolabbi világokkal. 10–12 mondatos fogalmazásban fejtsd ki erről a véleményedet, válaszolj a címben feltett kérdésre! 3 érvvel támaszd alá álláspontodat! Érveid szólhatnak a múzeumok létjogosultsága mellett és ellen is.\n\nFigyelem! A 4 mondatnál rövidebb fogalmazás nem értékelhető! Ha a fogalmazás nem éri el a 10 mondatot, az jelentős pontlevonással jár.",
+      "subTasks": [],
+      "scoring": "tiered",
+      "images": [],
+      "explanation": "Szabad véleménykifejtés a múzeumok létjogosultságáról. Legalább 3 érv szükséges (lehet mellette és ellene is). Minimum 10 mondat az ideális terjedelem, 4 mondatnál rövidebb nem értékelhető. A pontszám nem függhet a tanuló véleményétől.",
+      "gradingType": "essay",
+      "checklist": [
+        {
+          "label": "Tartalom: a fogalmazás megfelel a témának, a tanuló álláspontja egyértelműen azonosítható, legalább 3 különböző érvet mutat be, a szöveg eléri a 10 mondatot",
+          "maxPoints": 3
+        },
+        {
+          "label": "Szerkezet: a szöveg kerek, egész, lezárt, formailag tagolt, logikusan és arányosan szerkesztett, eléri a 10 mondatot",
+          "maxPoints": 3
+        },
+        {
+          "label": "Stílus, szóhasználat: megfelel a témának és a köznyelvi normának, gazdag szókincsű, nyelvhelyességi szempontból kifogástalan",
+          "maxPoints": 1
+        },
+        {
+          "label": "Helyesírás: legfeljebb 1–2 hiba a szövegben (súlyos hibák: igekötős igék, j-ly tévesztés, mássalhangzó hosszúsága stb.)",
+          "maxPoints": 2
+        },
+        {
+          "label": "Külalak, íráskép: rendezett, áttekinthető, jól olvasható, ékezethasználat egyértelmű",
+          "maxPoints": 1
+        }
+      ]
+    }
+  ]
+}
