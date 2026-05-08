@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teszt — Magyar Felvételi Gyakorló</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+      <a href="index.html" class="btn btn-secondary">← Vissza</a>
+      <h1 id="test-title">Feladatlap</h1>
+    </div>
+    <div id="tasks-container">Betöltés...</div>
+    <div style="margin-top:2rem; padding-top:1rem; border-top:1px solid #e5e7eb;">
+      <button class="btn btn-primary" onclick="submitTest()" style="font-size:1.05rem; padding:0.7rem 2rem;">
+        Beküldés és kiértékelés
+      </button>
+    </div>
+  </div>
+
+  <script src="js/logic.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/test.js"></script>
+</body>
+</html>
