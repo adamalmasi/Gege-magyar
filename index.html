@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magyar Felvételi Gyakorló</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Magyar Felvételi Gyakorló</h1>
+    <p class="subtitle">8. osztályos magyar nyelvi felvételi feladatlapok, 2005–2026</p>
+
+    <button class="btn btn-primary" onclick="startRandomTest()" style="font-size:1.1rem; padding: 0.75rem 2rem; margin-bottom: 1.5rem;">
+      🎲 Random teszt indítása
+    </button>
+
+    <h2>Statisztikák</h2>
+    <div id="stats-section">
+      <p class="subtitle">Még nincs megírt teszted.</p>
+    </div>
+
+    <div style="display:flex; gap:0.75rem; margin: 1rem 0;">
+      <button class="btn btn-secondary" onclick="exportResults()">⬇ Eredmények exportálása</button>
+      <label class="btn btn-secondary" style="cursor:pointer;">
+        ⬆ Importálás
+        <input type="file" accept=".json" style="display:none" onchange="importResults(this)">
+      </label>
+    </div>
+
+    <h2>Feladatlapok</h2>
+    <div id="feladatlapok-table">Betöltés...</div>
+  </div>
+
+  <script src="js/logic.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
