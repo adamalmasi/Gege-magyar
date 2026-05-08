@@ -18,7 +18,7 @@ exports.handler = async function(event) {
     return { statusCode: 400, body: JSON.stringify({ score: 0, feedback: 'Hiányzó adat.' }) };
   }
 
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  const client = new Anthropic({ apiKey: process.env.gege_magyar_API });
 
   try {
     const message = await client.messages.create({

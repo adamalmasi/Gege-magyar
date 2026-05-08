@@ -31,7 +31,7 @@ exports.handler = async function(event) {
     .map(item => `- ${item.label} (max ${item.maxPoints} pont)`)
     .join('\n');
 
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  const client = new Anthropic({ apiKey: process.env.gege_magyar_API });
 
   try {
     const message = await client.messages.create({
