@@ -1,5 +1,5 @@
 {
-  "name": "magyar-felvételi-functions",
+  "name": "gege-magyar",
   "version": "1.0.0",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.1"
