@@ -41,7 +41,7 @@
       "scoring": "per_item",
       "images": [],
       "explanation": "1. szólás: Nem látja / látta a fától az erdőt. 2. szólás: Rossz fát tesz / tett a tűzre. Pont csak akkor adható, ha a felvételiző a szólásokat a megadott változatok egyikében adta meg. A tesz szó helyett a rak szó nem fogadható el. A szólások sorrendje felcserélhető.",
-      "gradingType": "exact"
+      "gradingType": "open"
     },
     {
       "id": 3,

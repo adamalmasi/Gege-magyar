@@ -34,7 +34,7 @@ function renderTask(task, idx) {
   let body = '';
 
   if (task.images && task.images.length > 0) {
-    body += task.images.map(src => `<img src="/${src}" alt="feladat kép" style="max-width:100%; margin-bottom:0.75rem; border-radius:6px;">`).join('');
+    body += task.images.map(src => `<img src="/${src}" alt="feladat kép" style="max-width:100%; margin-bottom:0.75rem; border-radius:6px;" onerror="this.style.display='none'">`).join('');
   }
 
   if (isEssay) {

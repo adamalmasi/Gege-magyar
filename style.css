@@ -50,7 +50,7 @@ a:hover { text-decoration: underline; }
 .task-card { border-left: 4px solid #2563eb; }
 .task-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
 .task-points { font-size: 0.85rem; color: #666; font-weight: normal; }
-.instruction { margin-bottom: 1rem; }
+.instruction { margin-bottom: 1rem; white-space: pre-wrap; }
 .sub-task { margin-bottom: 0.75rem; }
 .sub-task label { display: block; font-size: 0.9rem; color: #444; margin-bottom: 0.25rem; }
 
