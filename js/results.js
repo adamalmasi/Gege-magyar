@@ -52,7 +52,7 @@ function renderDetails() {
 }
 
 function renderTaskResult({ task, result, pending }, idx) {
-  let body = `<p class="instruction">${task.instruction}</p>`;
+  let body = `<p class="instruction">${task.instruction.replace(/ \| /g, '\n')}</p>`;
 
   if (task.gradingType === 'essay') {
     const essayText = (answers[task.id] || {}).essay || '';

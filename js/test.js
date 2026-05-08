@@ -63,7 +63,7 @@ function renderTask(task, idx) {
         <h3>${idx + 1}. feladat</h3>
         <span class="task-points">(max. ${task.maxPoints} pont)</span>
       </div>
-      <p class="instruction">${task.instruction}</p>
+      <p class="instruction">${task.instruction.replace(/ \| /g, '\n')}</p>
       ${body}
     </div>`;
 }
