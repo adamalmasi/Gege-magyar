@@ -33,12 +33,13 @@ exports.handler = async function(event) {
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-  const message = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 500,
-    messages: [{
-      role: 'user',
-      content: `Te egy szigorú, de igazságos magyar felvételi fogalmazás-javító vagy. Értékeld az alábbi fogalmazást a megadott rubrika szerint.
+  try {
+    const message = await client.messages.create({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 500,
+      messages: [{
+        role: 'user',
+        content: `Te egy szigorú, de igazságos magyar felvételi fogalmazás-javító vagy. Értékeld az alábbi fogalmazást a megadott rubrika szerint.
 
 Téma: ${essayPrompt}
 
@@ -60,10 +61,9 @@ Válaszolj KIZÁRÓLAG ebben a JSON formátumban, semmi más:
   "totalScore": <összeg>,
   "feedback": "2-3 mondatos összefoglaló visszajelzés magyarul"
 }`
-    }]
-  });
+      }]
+    });
 
-  try {
     const result = JSON.parse(message.content[0].text);
     return {
       statusCode: 200,
