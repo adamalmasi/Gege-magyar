@@ -12,12 +12,27 @@ function assembleRandomTest(allFeladatlapok) {
   return result;
 }
 
+function normalizeStudentAnswer(str) {
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/^(az?)\s+/i, '')  // strip leading article (a / az)
+    .replace(/\s+/g, ' ');
+}
+
+function matchesAnyAlternative(studentRaw, correctRaw) {
+  const student = normalizeStudentAnswer(studentRaw);
+  // Split correct answer on " / " or " vagy " to get all accepted forms
+  const alternatives = correctRaw
+    .split(/\s*\/\s*|\s+vagy\s+/i)
+    .map(a => normalizeStudentAnswer(a.split(/[—–(]/)[0])); // strip dash-notes and parentheticals
+  return alternatives.some(alt => student === alt);
+}
+
 function gradeExact(task, answers) {
   const subResults = {};
   for (const sub of task.subTasks) {
-    const student = (answers[sub.id] || '').trim().toLowerCase();
-    const correct = sub.answer.trim().toLowerCase();
-    const isCorrect = student === correct;
+    const isCorrect = matchesAnyAlternative(answers[sub.id] || '', sub.answer);
     subResults[sub.id] = { correct: isCorrect, points: isCorrect ? sub.points : 0 };
   }
 

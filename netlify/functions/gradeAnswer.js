@@ -26,12 +26,20 @@ exports.handler = async function(event) {
       max_tokens: 200,
       messages: [{
         role: 'user',
-        content: `Te egy szigorú, de igazságos magyar nyelvi felvételi javító vagy. Dönts, hogy a diák válasza szemantikailag egyenértékű-e a helyes válasszal.
+        content: `Te egy igazságos magyar nyelvi felvételi javító vagy. Dönts, hogy a diák válasza elfogadható-e.
 
 Feladat: ${instruction}
 Helyes válasz: ${correctAnswer}
 Elfogadható variánsok / megjegyzés: ${explanation || 'nincs'}
 Diák válasza: ${studentAnswer}
+
+Fontos szabályok az értékeléshez:
+- A kis- és nagybetű különbsége ne számítson (pl. "IGAZ" = "igaz" = "I")
+- A névelő (a/az) hiánya vagy megléte ne számítson (pl. "csillagok" = "a csillagok")
+- Ha a helyes válasz több alternatívát tartalmaz (pl. "tört vagy elem"), bármelyik elfogadható
+- Ha a feladat halmazból való választást kér (pl. 5 szám közül 5-öt), a diák válasza pontot kap, ha szerepel a helyes halmazban
+- Ha a diák a betűjel helyett a szót írta (pl. "piramis" a "B" helyett), fogadd el, ha a tartalom helyes
+- Fogadj el rokon értelmű szavakat és toldalékváltozatokat, ha a tartalom egyértelmű
 
 Válaszolj KIZÁRÓLAG ebben a JSON formátumban, semmi más:
 {"score": 0 vagy 1, "feedback": "max 2 mondatos magyar visszajelzés"}`
