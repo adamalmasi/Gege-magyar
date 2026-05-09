@@ -73,14 +73,25 @@ function renderTaskResult({ task, result, pending }, idx) {
     } else {
       body += task.subTasks.map(sub => {
         const sr = result.subResults[sub.id];
-        const cls = sr && sr.correct ? 'correct' : 'incorrect';
-        const icon = sr && sr.correct ? '✓' : '✗';
+        const isCorrect = sr && sr.correct;
         const studentAns = (answers[task.id] || {})[sub.id] || '—';
-        return `<p>${sub.id}) Válaszod: <strong>${studentAns}</strong> <span class="${cls}">${icon}</span> | Helyes: <strong>${sub.answer}</strong></p>`;
+        if (isCorrect) {
+          return `<div class="sub-result">
+            <span class="sub-id">${sub.id})</span>
+            <span class="answer-tag answer-correct-tag">✓ ${studentAns}</span>
+          </div>`;
+        } else {
+          return `<div class="sub-result">
+            <span class="sub-id">${sub.id})</span>
+            <span class="answer-tag answer-incorrect-tag">✗ ${studentAns}</span>
+            <span class="answer-arrow">→ helyes:</span>
+            <span class="answer-tag answer-expected-tag">${sub.answer}</span>
+          </div>`;
+        }
       }).join('');
     }
     if (task.explanation) {
-      body += `<div class="ai-feedback">${task.explanation}</div>`;
+      body += `<div class="ai-feedback" style="margin-top:0.5rem">${task.explanation}</div>`;
     }
   }
 
@@ -175,6 +186,12 @@ async function gradeOpenTasks() {
       taskResults[i].result = { scored: subScored, max: task.maxPoints };
       taskResults[i].pending = false;
       totalScored += subScored;
+
+      const badge = document.querySelector(`#task-result-${task.id} .score-badge`);
+      if (badge) {
+        badge.textContent = `${subScored}/${task.maxPoints} pont`;
+        badge.className = `score-badge ${subScored >= task.maxPoints ? 'score-good' : subScored > 0 ? 'score-ok' : 'score-bad'}`;
+      }
     }
 
     renderSummary(totalScored, totalMax, taskResults.some(r => r.pending));
