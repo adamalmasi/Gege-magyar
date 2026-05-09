@@ -140,7 +140,7 @@ async function gradeOpenTasks() {
           let html = `<div class="ai-feedback">${data.feedback}</div>`;
           html += '<div style="margin-top:0.5rem; font-size:0.85rem;">';
           for (const [key, val] of Object.entries(data.dimensions)) {
-            const item = task.checklist.find(c => c.label.toLowerCase().startsWith(key));
+            const item = task.checklist.find(c => c.label.toLowerCase().startsWith(key.toLowerCase()));
             const max = item ? item.maxPoints : '?';
             html += `<span style="margin-right:1rem;"><strong>${key}:</strong> ${val}/${max}</span>`;
           }
