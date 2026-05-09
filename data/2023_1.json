@@ -50,15 +50,39 @@
       "subTasks": [
         {
           "id": "a",
-          "prompt": "Írd be a lottószelvényre az 5 hibásan írt szó sorszámát!",
-          "answer": "5, 7, 8, 10, 14",
-          "points": 5
+          "prompt": "Lottószelvény 1. szám (a hibás szó sorszáma 1–15-ig):",
+          "answer": "5, 7, 8, 10, 14 — a helyes hibás szavak: lessz→lesz, ujjabb→újabb, nyilik→nyílik, higyjél→higgyed, játszuk→játsszuk. 1 pont jár, ha a beírt szám e sorszámok egyike.",
+          "points": 1
+        },
+        {
+          "id": "b",
+          "prompt": "Lottószelvény 2. szám (a hibás szó sorszáma 1–15-ig):",
+          "answer": "5, 7, 8, 10, 14 — a helyes hibás szavak: lessz→lesz, ujjabb→újabb, nyilik→nyílik, higyjél→higgyed, játszuk→játsszuk. 1 pont jár, ha a beírt szám e sorszámok egyike, és még nem szerepelt a többi mezőben.",
+          "points": 1
+        },
+        {
+          "id": "c",
+          "prompt": "Lottószelvény 3. szám (a hibás szó sorszáma 1–15-ig):",
+          "answer": "5, 7, 8, 10, 14 — a helyes hibás szavak: lessz→lesz, ujjabb→újabb, nyilik→nyílik, higyjél→higgyed, játszuk→játsszuk. 1 pont jár, ha a beírt szám e sorszámok egyike.",
+          "points": 1
+        },
+        {
+          "id": "d",
+          "prompt": "Lottószelvény 4. szám (a hibás szó sorszáma 1–15-ig):",
+          "answer": "5, 7, 8, 10, 14 — a helyes hibás szavak: lessz→lesz, ujjabb→újabb, nyilik→nyílik, higyjél→higgyed, játszuk→játsszuk. 1 pont jár, ha a beírt szám e sorszámok egyike.",
+          "points": 1
+        },
+        {
+          "id": "e",
+          "prompt": "Lottószelvény 5. szám (a hibás szó sorszáma 1–15-ig):",
+          "answer": "5, 7, 8, 10, 14 — a helyes hibás szavak: lessz→lesz, ujjabb→újabb, nyilik→nyílik, higyjél→higgyed, játszuk→játsszuk. 1 pont jár, ha a beírt szám e sorszámok egyike.",
+          "points": 1
         }
       ],
       "scoring": "per_item",
       "images": [],
       "explanation": "Helyes sorszámok: 5, 7, 8, 10, 14. (lessz → lesz, ujjabb → újabb, nyilik → nyílik, higyjél → higgyed/higgy, játszuk → játsszuk). Minden helyes szám beírásáért 1 pont jár. A helyes számokat bármilyen sorrendben el kell fogadni! A számok helyett a hibás szóalakok beírását is el kell fogadni.",
-      "gradingType": "exact"
+      "gradingType": "open"
     },
     {
       "id": 4,
@@ -67,9 +91,45 @@
       "subTasks": [
         {
           "id": "a",
-          "prompt": "Párosítsd a megszólításokat a képekkel! (A: ?, B: ?, C: ?, D: ?, E: ?, F: ?, G: ?)",
-          "answer": "A) 3, B) X, C) 2, D) 4, E) 1, F) 5, G) X",
-          "points": 2
+          "prompt": "A) Adjon Isten! — kép sorszáma (1–5 vagy X ha nincs kép):",
+          "answer": "3",
+          "points": 1
+        },
+        {
+          "id": "b",
+          "prompt": "B) Tisztelt Ház! — kép sorszáma (1–5 vagy X ha nincs kép):",
+          "answer": "X",
+          "points": 1
+        },
+        {
+          "id": "c",
+          "prompt": "C) Üdvözlöm, Méltóságos Uram! — kép sorszáma (1–5 vagy X ha nincs kép):",
+          "answer": "2",
+          "points": 1
+        },
+        {
+          "id": "d",
+          "prompt": "D) Honfitársaim! — kép sorszáma (1–5 vagy X ha nincs kép):",
+          "answer": "4",
+          "points": 1
+        },
+        {
+          "id": "e",
+          "prompt": "E) Csá, csumi! — kép sorszáma (1–5 vagy X ha nincs kép):",
+          "answer": "1",
+          "points": 1
+        },
+        {
+          "id": "f",
+          "prompt": "F) Kezét csókolom! — kép sorszáma (1–5 vagy X ha nincs kép):",
+          "answer": "5",
+          "points": 1
+        },
+        {
+          "id": "g",
+          "prompt": "G) Kedves Szülők! — kép sorszáma (1–5 vagy X ha nincs kép):",
+          "answer": "X",
+          "points": 1
         }
       ],
       "scoring": "tiered",
@@ -115,21 +175,21 @@
         },
         {
           "id": "f",
-          "prompt": "Egészítsd ki a mondatpárt! Mély magánhangzós szó (férfiak): t…p…gt…k — Magas magánhangzós szó (hölgyek): t…p…gt…k",
-          "answer": "férfiak: topogtak – hölgyek: tipegtek",
+          "prompt": "Egészítsd ki a mondatpárt! Mély magánhangzós szó (férfiak t…p…gt…k) és magas magánhangzós szó (hölgyek t…p…gt…k) — add meg mindkét szót:",
+          "answer": "topogtak (mély) és tipegtek (magas). Mindkét szónak szerepelnie kell.",
           "points": 1
         },
         {
           "id": "g",
-          "prompt": "Egészítsd ki a mondatpárt! Mély magánhangzós szó (csónak): l…b…gt…tt — Magas magánhangzós szó (gyertyaláng): l…b…gt…tt",
-          "answer": "csónak: libegett/lebegett – gyertyaláng: lobogott",
+          "prompt": "Egészítsd ki a mondatpárt! Mély magánhangzós szó (csónak l…b…gt…tt) és magas magánhangzós szó (gyertyaláng l…b…gt…tt) — add meg mindkét szót:",
+          "answer": "lobogott (mély) és libegett vagy lebegett (magas). Mindkét szónak szerepelnie kell.",
           "points": 1
         }
       ],
       "scoring": "per_item",
       "images": [],
-      "explanation": "a) társas, b) ajándék, c) csiga, d) osztja, e) szépet — Minden helyes megoldásért 1 pont adható. A pont nem adható meg, ha egy sorban több szót is jelölt. f) férfiak: topogtak – hölgyek: tipegtek. g) csónak: libegett/lebegett – gyertyaláng: lobogott. Minden helyes szópár 1-1 pont. Az 1 pont csak akkor adható meg, ha a helyes szópár mellett nincs rossz megoldás.",
-      "gradingType": "exact"
+      "explanation": "a) társas, b) ajándék, c) csiga, d) osztja, e) szépet — Minden helyes megoldásért 1 pont adható. A pont nem adható meg, ha egy sorban több szót is jelölt. f) férfiak: topogtak – hölgyek: tipegtek. g) csónak: lobogott – gyertyaláng: libegett/lebegett. Minden helyes szópár 1-1 pont. Az 1 pont csak akkor adható meg, ha a helyes szópár mellett nincs rossz megoldás.",
+      "gradingType": "open"
     },
     {
       "id": 6,
@@ -139,19 +199,19 @@
         {
           "id": "a",
           "prompt": "TÖRTÉNELEM — főnév (betűk sorrendjén ne változtass!):",
-          "answer": "tört vagy elem",
+          "answer": "tört vagy elem (bármelyik elfogadható, pl. tört, elem, tör, történ stb. — főnév legyen)",
           "points": 1
         },
         {
           "id": "b",
           "prompt": "TÖRTÉNELEM — ige (betűk sorrendjén ne változtass!):",
-          "answer": "tör vagy tört (múlt időben)",
+          "answer": "tör vagy tört (igealakban: tör, tört, töri stb.)",
           "points": 1
         },
         {
           "id": "c",
           "prompt": "TÖRTÉNELEM — névmás (betűk sorrendjén ne változtass!):",
-          "answer": "én vagy e",
+          "answer": "én vagy e (személyes névmás vagy mutató névmás)",
           "points": 1
         },
         {
@@ -163,19 +223,19 @@
         {
           "id": "e",
           "prompt": "Alany: A könyvtár csendje mindig megnyugtatott.",
-          "answer": "(a) csendje",
+          "answer": "csendje (a névelővel együtt: a csendje is elfogadható)",
           "points": 1
         },
         {
           "id": "f",
           "prompt": "Alany: Mindenkinek megvan a maga keresztje.",
-          "answer": "(a) keresztje",
+          "answer": "keresztje (a névelővel együtt: a keresztje is elfogadható)",
           "points": 1
         },
         {
           "id": "g",
           "prompt": "Állítmány: Ebül szerzett jószág ebül vész el.",
-          "answer": "vész el",
+          "answer": "vész el (igekötő nélkül — csak 'vész' — nem fogadható el)",
           "points": 1
         },
         {
@@ -188,7 +248,7 @@
       "scoring": "per_item",
       "images": [],
       "explanation": "a) főnév: tört, elem — b) ige: tör, tört (múlt időben) — c) névmás: én, e — d) igekötő: el, le. Szófajonként 1 jó megoldásért 1 pont adható. A válasz csak akkor fogadható el, ha a jó válasz mellett nincs rossz megoldás. e) (a) csendje — f) (a) keresztje — g) vész el (igekötő nélkül nem fogadható el a válasz) — h) alakja. A válasz csak akkor fogadható el, ha csak a megadott szavakat írta ki.",
-      "gradingType": "exact"
+      "gradingType": "open"
     },
     {
       "id": 7,
@@ -197,16 +257,16 @@
       "subTasks": [
         {
           "id": "a",
-          "prompt": "Párosítsd a nyelvújítási szavakat a mai megfelelőikkel! (csucsag: ?, égész: ?, gömble: ?, hangbetűzet: ?)",
-          "answer": "csucsag: B, égész: A, gömble: F, hangbetűzet: E",
+          "prompt": "Párosítsd a nyelvújítási szavakat a mai megfelelőikkel! Add meg a betűjeleket (A–F) vagy a szavakat:\ncsucsag: ? | égész: ? | gömble: ? | hangbetűzet: ?",
+          "answer": "csucsag: B (piramis), égész: A (csillagász), gömble: F (égitest), hangbetűzet: E (kotta). A betűjel helyett a szó maga is elfogadható.",
           "points": 2
         }
       ],
       "scoring": "tiered",
       "tiers": [[4, 2], [2, 1], [0, 0]],
       "images": [],
-      "explanation": "csucsag: B (piramis), égész: A (csillagász), gömble: F (égitest), hangbetűzet: E (kotta). 4 jó megoldás: 2 pont, 2–3 jó megoldás: 1 pont, 0–1 jó megoldás: 0 pont. A válasz csak akkor fogadható el, ha nincs mellette rossz megoldás.",
-      "gradingType": "exact"
+      "explanation": "csucsag: B (piramis), égész: A (csillagász), gömble: F (égitest), hangbetűzet: E (kotta). 4 jó megoldás: 2 pont, 2–3 jó megoldás: 1 pont, 0–1 jó megoldás: 0 pont. A válasz csak akkor fogadható el, ha nincs mellette rossz megoldás. A betűjel helyett a mai szó megnevezése is elfogadható.",
+      "gradingType": "open"
     },
     {
       "id": 8,
@@ -216,7 +276,7 @@
         {
           "id": "a",
           "prompt": "A vers szövege szerint mik libegnek föl a magasba?",
-          "answer": "(a) csillagok (libegnek)",
+          "answer": "csillagok (a névelővel együtt: a csillagok is elfogadható)",
           "points": 1
         },
         {
@@ -227,13 +287,13 @@
         },
         {
           "id": "c",
-          "prompt": "Igaz vagy hamis? — A vers páros rímelésű.",
+          "prompt": "Igaz vagy hamis? — A vers páros rímelésű. (Írd: IGAZ vagy HAMIS)",
           "answer": "HAMIS",
           "points": 1
         },
         {
           "id": "d",
-          "prompt": "Igaz vagy hamis? — A „Szunyókálnak szelíden\" sorban alliterációt találhatunk.",
+          "prompt": "Igaz vagy hamis? — A „Szunyókálnak szelíden\" sorban alliterációt találhatunk. (Írd: IGAZ vagy HAMIS)",
           "answer": "IGAZ",
           "points": 1
         }
@@ -241,7 +301,7 @@
       "scoring": "per_item",
       "images": [],
       "explanation": "a) (a) csillagok (libegnek) — b) hasonlat (a válasz csak akkor fogadható el, ha a jó válasz mellett nem szerepel más szó) — c) A vers páros rímelésű: HAMIS — d) A „Szunyókálnak szelíden\" sorban alliterációt találhatunk: IGAZ.",
-      "gradingType": "exact"
+      "gradingType": "open"
     },
     {
       "id": 9,
@@ -251,7 +311,7 @@
         {
           "id": "a",
           "prompt": "Mi volt Kabos Gyula foglalkozása?",
-          "answer": "színész, színművész",
+          "answer": "színész vagy színművész",
           "points": 1
         },
         {
@@ -263,32 +323,50 @@
         {
           "id": "c",
           "prompt": "Idegen szó: testtel tett kifejező mozdulat, kézmozdulat:",
-          "answer": "gesztus / gesztusai",
+          "answer": "gesztus (vagy gesztusai — a szövegbeli alak is elfogadható)",
           "points": 1
         },
         {
-          "id": "d",
-          "prompt": "Igaz vagy hamis? (1) Kabos Gyula boldog ember volt. (2) A forgatókönyvekben szerepelt: „itt bejön Kabos, és mond valami jót\". (3) Négy filmet említ cím szerint. (4) Minden jelenetét jó előre begyakorolta.",
-          "answer": "H, I, H, H",
-          "points": 4
+          "id": "d1",
+          "prompt": "Igaz vagy hamis? — 1. Kabos Gyula boldog ember volt. (Írd: IGAZ vagy HAMIS)",
+          "answer": "HAMIS",
+          "points": 1
+        },
+        {
+          "id": "d2",
+          "prompt": "Igaz vagy hamis? — 2. A forgatókönyvekben szerepelt ez a mondat: „itt bejön Kabos, és mond valami jót\". (Írd: IGAZ vagy HAMIS)",
+          "answer": "IGAZ",
+          "points": 1
+        },
+        {
+          "id": "d3",
+          "prompt": "Igaz vagy hamis? — 3. Kabos Gyula filmjei közül négyet említ cím szerint a szöveg. (Írd: IGAZ vagy HAMIS)",
+          "answer": "HAMIS",
+          "points": 1
+        },
+        {
+          "id": "d4",
+          "prompt": "Igaz vagy hamis? — 4. Kabos Gyula a forgatásokra minden jelenetét jó előre begyakorolta. (Írd: IGAZ vagy HAMIS)",
+          "answer": "HAMIS",
+          "points": 1
         },
         {
           "id": "e",
-          "prompt": "Mit jelent: „az külön megérne egy misét\"?",
-          "answer": "3",
+          "prompt": "Mit jelent: „az külön megérne egy misét\"? (Add meg a számot: 1, 2 vagy 3)",
+          "answer": "3 (Arról még hosszasan lehet beszélni.)",
           "points": 1
         },
         {
           "id": "f",
-          "prompt": "Írd le a szöveg első részében kiemelt szóláshasonlatok eredeti formáját! (1. és 2.)",
-          "answer": "Szegény vagyok (Szegény), mint a templom egere. | Ritka, mint a fehér holló.",
+          "prompt": "Írd le a szöveg első részében kiemelt szóláshasonlatok eredeti formáját! (Mind a kettőt!)\n1. szóláshasonlat:\n2. szóláshasonlat:",
+          "answer": "1. Szegény vagyok, mint a templom egere. 2. Ritka, mint a fehér holló.",
           "points": 1
         }
       ],
       "scoring": "per_item",
       "images": [],
-      "explanation": "a) színész, színművész — b) stáb — c) gesztus/gesztusai — d) H, I, H, H (1. Kabos Gyula boldog ember volt: HAMIS — szomorú ember volt; 2. A forgatókönyvekben szerepelt: IGAZ; 3. Négy filmet említ cím szerint: HAMIS — három cím szerepel (Kölcsönkért kastély, Meseautó, Lovagias ügy); 4. Minden jelenetét begyakorolta: HAMIS — rögtönzött). A pont csak akkor adható meg, ha a felvételiző egyértelműen jelöli a válaszát. — e) 3. (Arról még hosszasan lehet beszélni) — f) Szegény vagyok (Szegény), mint a templom egere. | Ritka, mint a fehér holló. A pont csak akkor adható meg, ha mindkét szóláshasonlat a megadott szóval lett kiegészítve.",
-      "gradingType": "exact"
+      "explanation": "a) színész, színművész — b) stáb — c) gesztus/gesztusai — d1) HAMIS (szomorú ember volt) — d2) IGAZ — d3) HAMIS (három filmet említ: Kölcsönkért kastély, Meseautó, Lovagias ügy) — d4) HAMIS (rögtönzött) — e) 3. (Arról még hosszasan lehet beszélni) — f) 1. Szegény vagyok (Szegény), mint a templom egere. 2. Ritka, mint a fehér holló. A pont csak akkor adható meg, ha mindkét szóláshasonlat a megadott szóval lett kiegészítve.",
+      "gradingType": "open"
     },
     {
       "id": 10,
